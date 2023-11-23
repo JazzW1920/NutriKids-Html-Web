@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2.5rem;
+  font-family: calibri;
+  background-color: #fcfcf4;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='1' viewBox='0 0 40 1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v1H0z' fill='%23edefa1' fill-opacity='0.27' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.container {
+  background-color: #fcfcf4;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 90%;
+  min-height: 95vh;
+  max-height: 100%;
+  display: grid;
+  grid-template-rows: repeat(9 1fr);
+  grid-template-columns: repeat(4 1fr);
+  gap: 8px;
+  grid-template-areas: "box1 box1 box1 box2" "box1 box1 box1 box2" "box1 box1 box1 box2" "box1 box1 box1 box3" "box1 box1 box1 box3" "box4 box5 box5 box3" "box4 box5 box5 box6" "box4 box5 box5 box6";
+}
+
+.box1, .box2, .box3, .box5, .box6 {
+  background: rgba(250, 250, 241, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-radius: 10px;
+}
+
+.box1 {
+  grid-area: box1;
+  background: url("https://ser.vitao.com.br/wp-content/uploads/2017/07/shutterstock_307693352.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.box2 {
+  grid-area: box2;
+}
+
+.box3 {
+  grid-area: box3;
+}
+
+.box4 {
+  grid-area: box4;
+  background: none;
+}
+
+.box5 {
+  grid-area: box5;
+}
+
+.box6 {
+  grid-area: box6;
+}
+
+@media (max-width: 700px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "box1" "box1" "box1" "box1" "box1" "box1" "box1" "box1" "box1" "box1" "box1" "box1" "box1" "box2" "box2" "box3" "box3" "box4" "box4" "box5" "box5" "box6" "box6";
+  }
+}
+.container h1 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  font-size: 5rem;
+  padding: 50% 0%;
+  font-weight: bold;
+}
+
+.container h3 {
+  display: flex;
+  justify-items: center;
+  margin: 5%;
+  font-weight: bold;
+}
+
+.container h4 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.9rem;
+  margin: 3%;
+  padding: 10%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container p {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+  font-size: 1.3rem;
+}
+
+.container a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container a:hover {
+  color: #D8E4AB !important;
+}
+
+.container .btn {
+  border: 2px solid #D8E4AB;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 70px;
+  background-color: #D8E4AB;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  transition: 0.7s;
+}
+
+.container .btn:hover {
+  background-color: #fff;
+  border: 2px solid #D8E4AB;
+  color: #000;
+}
+
+header {
+    background-color: #fcfcf4;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='1' viewBox='0 0 40 1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v1H0z' fill='%23edefa1' fill-opacity='0.27' fill-rule='evenodd'/%3E%3C/svg%3E");
+    font-family: "Cinzel", serif;
+    font-family: "Poppins", sans-serif;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h3 {
+    margin: 0;
+    padding: 5px;
+}
+
+header .logo-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px 0px 0px 30px;
+}
+
+.main-container h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.main-container h3 {
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    padding: 0px;
+}
+
+.main-container p {
+    font-size: 15px;
+    padding: 0% 0% 5% 0%;
+}
+
+.areas.container {
+    margin: 30%;
+}
+
+.card-body {
+    height: 450px;
+    overflow-y: auto;
+    letter-spacing: 3px;
+}
+
+.card-item {
+    background: rgba(250, 250, 241, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
+    border-radius: 10px;
+    transition: background-color 0.6s;
+}
+
+.card-item :hover {
+    background-color: #dde5b6;
+    border-radius: 10px;
+}
+
+.photo {
+    display: flex;
+    width: 75%;
+    justify-content: center;
+    text-align: center;
+    padding: 0% 0% 0% 25%;
+}

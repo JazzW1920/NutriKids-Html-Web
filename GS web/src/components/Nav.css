@@ -1,0 +1,60 @@
+.navLogado .btn {
+    border: 2px solid #D8E4AB;
+    margin-left: 2rem;
+    border-radius: 70px;
+    background-color: #D8E4AB;
+    font-size: 10px;
+    font-weight: 900;
+    height: 3rem;
+    letter-spacing: 1px;
+    transition: 0.7s;
+}
+
+.navLogado .btn:hover {
+    background-color: #fff;
+    border: 2px solid #D8E4AB;
+    color: #000;
+}
+
+.navLogado p{
+    max-width: fit-content;
+}
+
+.usuario{
+    margin: 1rem 0 0 37px;
+}
+
+.navLogado{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.linkNav {
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 2px 3px;
+    cursor: pointer;
+    color: inherit;
+    border: 2px solid #D8E4AB;
+    background-color: #D8E4AB;
+    font-weight: 900;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    transition: 0.7s;
+}
+
+.home{
+    margin-left: 37px;
+}
+
+.login{
+    margin: 0 1rem;
+}
+
+
+.linkNav:hover {
+    background-color: #fff;
+    border: 2px solid #D8E4AB;
+    color: #000;
+}
